@@ -38,10 +38,10 @@ h1{ font-size: 17rem; color:#74819c;}
 .resetbtn:hover{
     cursor: pointer; box-shadow: 0 0 5px #4c7aef,0 0 25px #66c4ec,0 0 50px #66c4ec,0 0 50px #66c4ec,0 0 70px #66c4ec; scale:1.08;}
 
-@media screen and (max-width:450px) and (min-width:390px){ 
+@media screen and (max-width:450px) and (min-width:380px){ 
     h1{font-size: 3.6rem;}
     .resetbtn{ width: 25vh; font-size:1.2rem;}
-    .box-container{ width: 77.8vw; height: 48vh; margin-top: 6%;}
+    .box-container{ width: 77.8vw; height: 42vh; margin-top: 6%;}
     .box{width: 32%; border-right: 3px solid; border-bottom: 2px solid; height: 32%; font-size: 11vh;}
     .resetbtn:hover{
         cursor: pointer; box-shadow: 0 0 5px #4c7aef,0 0 10px #66c4ec,0 0 15px #66c4ec,0 0 20px #66c4ec,0 0 30px #66c4ec; scale:1.08;
@@ -50,7 +50,7 @@ h1{ font-size: 17rem; color:#74819c;}
 @media screen and (min-width:452px) and (max-width:580px){
     h1{font-size: 3.6rem;}
     .resetbtn{ width: 25vh; font-size:1.2rem;}
-    .box-container{ width: 58vw; height: 48vh; margin-top: 6%;}
+    .box-container{ width: 58vw; height: 44vh; margin-top: 6%;}
     .box{width: 32%; border-right: 3px solid; border-bottom: 2px solid; height: 32%; font-size: 12.3vh;}
     .resetbtn:hover{
         cursor: pointer; box-shadow: 0 0 5px #4c7aef,0 0 10px #66c4ec,0 0 15px #66c4ec,0 0 20px #66c4ec,0 0 30px #66c4ec; scale:1.08;
