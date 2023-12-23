@@ -1,0 +1,88 @@
+*{
+    margin: 0; padding: 0; overflow: hidden;
+}
+:root{ --orange: #F2C14E; --winning-blocks: #365e8073; --normal:#1d1e22;
+    --wrong: #d11e1e; --purple: #74819c; --divpur: #484e5c;
+}
+body{font-family: 'Finger Paint', cursive;}
+.wrapper{ 
+    background: url(./images/v1016-b-09.jpg);
+    background-size: cover; background-repeat: no-repeat;
+    width:100vw; height: 100vh;
+    color: var(--orange); display: flex;
+    justify-content: center; align-items:center; flex-direction:column;
+}
+h1{ font-size: 17rem; color:#74819c;}
+.box-container{
+    width: 56vh; height: 56vh; background-color: #1d1e22; margin-top: 2.5%;
+    border-radius: 23px; display: flex; flex-direction:row; flex-wrap:wrap; gap:1%;
+}
+
+.box{
+    height:18vh; width: 18vh; color: #484e5c;
+    border-right:  9px solid; border-bottom: 12px solid;
+    border-radius: 12px; transition: margin 0.2s ease-in-out;
+    display: flex; justify-content:center; align-items: center;
+    font-size: 14vh;
+}
+.box:hover{
+    color: rgb(102, 64, 240);  scale: 1.03; cursor: pointer; 
+}
+.box:nth-child(3n){ border-right: none;}
+.box:nth-child(6) ~ .box { border-bottom: none;}
+.resetbtn{
+    all: unset; text-align: center;
+    width: 11vw; height: 7vh; background-color: #1f3bdb; border-radius: 12px; 
+    transition: 0.2s; font-size: 90px; border: 1px #0345f9; font-family:inherit; 
+}
+.resetbtn:hover{
+    cursor: pointer; box-shadow: 0 0 5px #4c7aef,0 0 25px #66c4ec,0 0 50px #66c4ec,0 0 50px #66c4ec,0 0 70px #66c4ec; scale:1.08;}
+
+@media screen and (max-width:450px) and (min-width:390px){ 
+    h1{font-size: 3.6rem;}
+    .resetbtn{ width: 25vh; font-size:1.2rem;}
+    .box-container{ width: 77.8vw; height: 52vh; margin-top: 6%;}
+    .box{width: 32%; border-right: 3px solid; border-bottom: 2px solid; height: 32%; font-size: 11vh;}
+    .resetbtn:hover{
+        cursor: pointer; box-shadow: 0 0 5px #4c7aef,0 0 10px #66c4ec,0 0 15px #66c4ec,0 0 20px #66c4ec,0 0 30px #66c4ec; scale:1.08;
+    }
+}
+@media screen and (min-width:452px) and (max-width:580px){
+    h1{font-size: 3.6rem;}
+    .resetbtn{ width: 25vh; font-size:1.2rem;}
+    .box-container{ width: 58vw; height: 53vh; margin-top: 6%;}
+    .box{width: 32%; border-right: 3px solid; border-bottom: 2px solid; height: 32%; font-size: 12.3vh;}
+    .resetbtn:hover{
+        cursor: pointer; box-shadow: 0 0 5px #4c7aef,0 0 10px #66c4ec,0 0 15px #66c4ec,0 0 20px #66c4ec,0 0 30px #66c4ec; scale:1.08;
+    }
+}
+@media screen and (min-width:581px) and (max-width:620px){
+    h1{font-size: 3.6rem;}
+    .resetbtn{ width: 25vh; font-size:1.2rem;}
+    .box-container{ width: 58vw; height: 53vh; margin-top: 6%;}
+    .box{width: 32%; border-right: 3px solid; border-bottom: 2px solid; height: 32%; font-size: 14vh;}
+    .resetbtn:hover{
+        cursor: pointer; box-shadow: 0 0 5px #4c7aef,0 0 10px #66c4ec,0 0 15px #66c4ec,0 0 20px #66c4ec,0 0 30px #66c4ec; scale:1.08;
+    }
+}
+@media screen and (min-width:621px) and (max-width:768px){
+    h1{font-size: 3.6rem;}
+    .resetbtn{ width: 25vh; font-size:1.2rem;}
+    .box-container{ width: 51vw; height: 53vh; margin-top: 6%;}
+    .box{width: 32%; border-right: 3px solid; border-bottom: 2px solid; height: 32%; font-size: 13.3vh;}
+    .resetbtn:hover{
+        cursor: pointer; box-shadow: 0 0 5px #4c7aef,0 0 10px #66c4ec,0 0 15px #66c4ec,0 0 20px #66c4ec,0 0 30px #66c4ec; scale:1.08;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1350px){
+    h1{font-size: 5rem;}
+    .resetbtn{ width: 25vh; font-size:1.2rem;}
+    .box-container{ width: 34vw; height: 53vh; margin-top: 2%;}
+    .box{width: 32%; border-right: 3px solid; border-bottom: 2px solid; height: 32%; font-size: 14vh;}
+}
+@media screen and (min-width:1351px) and (max-width:1950px){
+    h1{font-size: 5rem;}
+    .resetbtn{ width: 25vh; font-size:1.2rem;}
+    .box-container{ width: 34vw; height: 53vh; margin-top: 2%;}
+    .box{width: 32%; border-right: 3px solid; border-bottom: 2px solid; height: 32%; font-size: 14vh;}
+}
